@@ -14,13 +14,13 @@ void print_usage(char* argv[])
 {
 	cerr<<"Generates all square spaced grids S with equal (p) rows\n";
 	cerr<<"and cols of {0,...,e-1} such that for all (x,y) in S\n";
-    cerr<<"either x+y (mod e) or x-y (mod e) belongs to S.\n\n";
-    cerr<<"Usage: " <<argv[0]<<" parity p_lb p_ub q\n";
-    cerr<<"Relevant for (4k+3)*(4k+3) QDP: parity=odd, q=2\n";
-    cerr<<"\tparity: one of even, odd or all\n";
-    cerr<<"\tp_lb: lower bound on p (integer value >= 1)\n";
-    cerr<<"\tp_ub: upper bound on p (integer value >= p_lb)\n";
-    cerr<<"\tq: we consider all e such that p<=e<=q*p (integer value >= 2)\n";
+	cerr<<"either x+y (mod e) or x-y (mod e) belongs to S.\n\n";
+	cerr<<"Usage: " <<argv[0]<<" parity p_lb p_ub q\n";
+	cerr<<"Relevant for (4k+3)*(4k+3) QDP: parity=odd, q=2\n";
+	cerr<<"\tparity: one of even, odd or all\n";
+	cerr<<"\tp_lb: lower bound on p (integer value >= 1)\n";
+	cerr<<"\tp_ub: upper bound on p (integer value >= p_lb)\n";
+	cerr<<"\tq: we consider all e such that p<=e<=q*p (integer value >= 2)\n";
 }
 
 int p;
